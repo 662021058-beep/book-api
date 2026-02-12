@@ -1,8 +1,8 @@
 // const { pool } = require('pg');
-import { Pool } from "pg"
+import { Pool } from "pg";
 
 // require('dotenv').config();
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 dotenv.config()
 
 const pool = new Pool({
