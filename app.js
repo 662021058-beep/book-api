@@ -15,6 +15,9 @@ app.use(express.json());
 import bookRoute from './routes/bookRoutes.js';
 app.use('/api/books',bookRoute);
 
+import authRoutes from './routes/authRoutes.js';
+app.use('/api/auth', authRoutes);
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
